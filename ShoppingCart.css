@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.image {
+    
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-summary {
+    border: 1px solid #D7DBDD;
+    width: 40%;
+    padding: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.cart-summary h1,
+.cart-summary p {
+    font-weight: bold; /* This will make all <h1> and <p> tags within .cart-summary bold */
+}
+.Item-Shipping {
+    border-bottom: 1px solid #000; /* Add a solid line under the shipping item */
+    padding-bottom: 5px; /* Optional: adds some space between the text and the line */
+    margin-bottom: 5px; /* Optional: adds some space below the line before the next item */
+}
+.summary-item.total {
+    font-size: 2em; /* Larger font size for total */
+}
+
+.cart-summary .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%; /* Optional: Makes the button stretch the full width of the cart-summary */
+    margin-top: 80px; /* Adds some space above the button */
+}
+.checkout-button {
+    text-align: center;
+    margin: 20px 0;
+}
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Adjust to the height of your footer */
+    line-height: 60px; /* Center text vertically */
+    background-color: #f8f9fa;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .nav-link:hover {
+    background-color: #555;
+  }

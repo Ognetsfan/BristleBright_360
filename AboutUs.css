@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+} 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 20px;
+    margin: 0;
+   
+  }
+  
+  @media(max-width: 768px) {
+    body {
+      padding-top: 10px;
+    }
+  }
+
+  
+  .container {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center; /* Centers text blocks within their container */
+    flex-direction: column; /* Stacks children vertically */
+    margin: 0 auto; /* Adds automatic margins on both sides */
+    padding: 0 20px; /* Adds some padding inside the container */
+    border: 1px solid #d3d3d3; /* Adds a grey border */
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Adjust to the height of your footer */
+    line-height: 60px; /* Center text vertically */
+    background-color: #f8f9fa;
+    text-align: center;
+    width: 100%;
+  }
+  
+@media(min-height: 500px) {
+  footer {
+    position: relative;
+  }
+}
+  /* Custom styling as per the layout image provided */
+  .img-fluid {
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .btn-lg {
+    padding: .5rem 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  @media(max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    h2 {
+      font-size: 2rem; /* Smaller font size on smaller screens */
+    }
+  }
+  
+  .btn-lg:hover, .btn-lg:focus {
+    background-color: #0056b3;  /* Darker shade for hover */
+    color: white;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .nav-link:hover {
+    background-color: #555;
+  }
+
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }

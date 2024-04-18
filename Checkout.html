@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bristle Bright 360</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="BristleBright_360_smaller_logo.png">
+    <link href="Checkout.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="BristleBright360logo.png" alt="BristleBright 360 Logo" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="AboutUs.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="ShoppingCart.html" id="shoppingCartDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shopping cart
+              </a>
+              <div class="dropdown-menu" aria-labelledby="shoppingCartDropdown">
+                <a class="dropdown-item" href="Checkout.html">Checkout</a>
+                <a class="dropdown-item" href="OrderConfirmation.html">Order Confirmation</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-4">
+        <div class="row">
+            <div class="mb-4">
+                <div class="shipping-address-form border-gray">
+                    <h2 class="shipping-address-title">Your Shipping Address</h2>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <label for="streetAddress" class="form-label">Street address *</label>
+                                <input type="text" class="form-control" id="streetAddress">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="townCity" class="form-label">Town / City *</label>
+                                <input type="text" class="form-control" id="townCity" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="postcode" class="form-label">Postcode *</label>
+                                <input type="text" class="form-control" id="postcode" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="country" class="form-label">Country *</label>
+                                <select id="country" class="form-select" required>
+                                <option selected></option>
+                                    <!-- Add other countries here -->
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">State (optional)</label>
+                                <select id="state" class="form-select">
+                                    <option selected></option>
+                                    <!-- Add other states here -->
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="billingAddress">
+                                    <label class="form-check-label" for="billingAddress">
+                                    Use a different billing address (optional)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </form>
+                </div>
+            <div>
+                <div class="payment-method-border">
+                    <h2>Payment Method Information</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name *</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name *</label>
+                            <input type="text" class="form-control" id="lastName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Card Number *</label>
+                            <input type="text" class="form-control" id="cardNumber" required>
+                            <!-- Include credit card icons here -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="expiry" class="form-label">Expiry *</label>
+                            <select id="expiryMonth" class="form-select d-inline-block w-auto">
+                                <option>Month</option>
+                                <!-- Month options -->
+                            </select>
+                            <select id="expiryYear" class="form-select d-inline-block w-auto">
+                                <option>Year</option>
+                                <!-- Year options -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cvv" class="form-label">CVV *</label>
+                            <input type="text" class="form-control" id="cvv" required>
+                            <!-- Include CVV info icon here -->
+                        </div>
+                        <div class="mb-3">
+                            <label for="cardAddressCountry" class="form-label">Card address country *</label>
+                            <select id="cardAddressCountry" class="form-select">
+                                <option>Choose country</option>
+                                <!-- Country options -->
+                            </select>
+                        </div>
+                        <!-- Additional fields as necessary -->
+                    </form>
+                </div>
+            </div>
+        </div>
+        <a href="OrderConfirmation.html" class="btn-order">Place Your Order</a>
+    </div>
+
+    <footer class="footer">
+        &copy; 2024 Xavier Sprosta | Privacy Statement | Terms of Service
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+
+</body>
+</html>
